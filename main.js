@@ -8,8 +8,10 @@ function Book(title, author, pages, read=false) {
   this.read = read;
 }
 
-function addBookToLibrary() {
+function addBookToLibrary(book) {
   // take params, create a book then store it in the array
+    book.id = crypto.randomUUID();
+    myLibrary.push(book);
 }
 
 function displayBooks() {
