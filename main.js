@@ -16,5 +16,8 @@ function addBookToLibrary(book) {
 
 function displayBooks() {
   // loop through the array and display each book
+  for (const book of myLibrary) {
+    console.log(`Title: ${book.title}, Author: ${book.author}, Pages: ${book.pages}, Read: ${book.read}`);
+  } 
 }
 
